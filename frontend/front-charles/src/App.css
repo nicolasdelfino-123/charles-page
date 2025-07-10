@@ -1,0 +1,19 @@
+.body {
+  padding-top: 10px; /* Ajustalo según el alto del header */
+}
+.bg-light-darker{
+  background-color: #dee2e6;
+}
+
+.chaplin {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
+
+
+  .titulo {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px; /* Estira un poco las letras */
+  }
+  
