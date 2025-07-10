@@ -1,8 +1,9 @@
 .body {
   padding-top: 10px; /* Ajustalo según el alto del header */
+  
 }
-.bg-light-darker{
-  background-color: #dee2e6;
+.bg-red{
+  background-color: #bb3e1c;
 }
 
 .chaplin {
@@ -15,5 +16,13 @@
   .titulo {
     font-family: 'Playfair Display', serif;
     letter-spacing: 5px; /* Estira un poco las letras */
+    
   }
   
+  .acceder {
+    margin-left: -80px;
+  }
+
+  .inicio-sesion {
+    margin-left: 180px;
+  }
