@@ -6,27 +6,41 @@ import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 export const Header = () => {
     return (
-        <header className="container-fluid d-flex align-items-center p-3 bg-red border-bottom">
-            <div className="d-flex align-items-center">
-                <img src="/chaplin.png" alt="foto-chaplin" className="me-0 ms-3" style={{ height: '60px' }} />
-                <h1 className="titulo m-0 ms-5  fw-bold">Charles</h1>
-            </div>
+        <header className="container-fluid bg-red border-bottom py-3">
+            <div className="row align-items-center">
 
-            <input
-                type="text"
-                placeholder="Ingresar título, autor, ISBN..."
-                className="form-control w-50 mt-2 ms-5"
-            />
+                {/* LOGO + TÍTULO */}
+                <div className="col-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start order-1 order-md-1 mb-2 mb-md-0">
+                    <img src="/chaplin.png" alt="foto-chaplin" style={{ height: '60px' }} />
+                    <h1 className="titulo m-0 ms-3 fw-bold">Charles</h1>
+                </div>
 
-            <div className="d-flex gap-4 align-items-center mt-2 inicio-sesion">
-                <a href="#" className="text-dark text-decoration-none fw-semibold acceder"><FontAwesomeIcon icon={faRightToBracket} className='me-2 fs-5' />Acceder / Registrarme</a>
-                <a href="#" className="text-dark text-decoration-none fw-semibold">Lista de deseos<FontAwesomeIcon icon={faHeart} className='ps-2' color='black' /></a>
-                <span className='fw-semibold'>$ 0,00</span>
-                <a href="#"><FontAwesomeIcon icon={faCartShopping} color='black' />
-                </a>
+                {/* ÍCONOS */}
+                <div className="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center gap-3 order-2 order-md-3 mb-2 mb-md-0">
+                    <a href="#" className="text-dark text-decoration-none fw-semibold d-flex align-items-center">
+                        <FontAwesomeIcon icon={faRightToBracket} className="me-2 fs-5" />
+                        <span className="d-none d-sm-inline">Acceder</span>
+                    </a>
+                    <a href="#" className="text-dark text-decoration-none fw-semibold d-flex align-items-center">
+                        <FontAwesomeIcon icon={faHeart} className="pe-2" color="black" />
+                        <span className="d-none d-sm-inline">Favoritos</span>
+                    </a>
+                    <a href="#" className="text-dark text-decoration-none fw-semibold d-flex align-items-center">
+                        <FontAwesomeIcon icon={faCartShopping} className="pe-2" color="black" />
+                        <span className="d-none d-sm-inline">$&nbsp;0,00</span>
+                    </a>
+                </div>
+
+                {/* BÚSQUEDA */}
+                <div className="col-12 col-md-5 order-3 order-md-2">
+                    <input
+                        type="text"
+                        placeholder="Ingresar título, autor, ISBN..."
+                        className="form-control search-bar"
+                    />
+                </div>
+
             </div>
         </header>
     );
 }
-
-

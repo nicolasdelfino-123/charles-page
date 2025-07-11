@@ -1,28 +1,44 @@
-.body {
-  padding-top: 10px; /* Ajustalo según el alto del header */
-  
-}
-.bg-red{
+/* ✅ Conservamos */
+.bg-red {
   background-color: #bb3e1c;
 }
 
-.chaplin {
-  height: 80px;
-  width: auto;
-  margin-right: 10px;
+.titulo {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 5px;
+  color: black;
+  font-size: 2.7rem;
 }
 
+.inicio-sesion {
+  margin-left: 180px;
+}
 
+.search-bar {
+  transition: width 0.3s ease;
+}
+
+/* Evita superposiciones en pantallas medianas */
+@media (max-width: 991px) {
+  .search-bar {
+    width: 100%;
+  }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
   .titulo {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 5px; /* Estira un poco las letras */
-    
+    font-size: 2.2rem;
+  }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 576px) {
+  .search-bar {
+    font-size: 0.9rem;
   }
   
-  .acceder {
-    margin-left: -80px;
+  .titulo {
+    font-size: 1.8rem;
   }
-
-  .inicio-sesion {
-    margin-left: 180px;
-  }
+}
