@@ -10,13 +10,13 @@ export const Header = () => {
             <div className="row align-items-center">
 
                 {/* LOGO + TÍTULO */}
-                <div className="col-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start order-1 order-md-1 mb-2 mb-md-0">
+                <div className="col-12 col-md-3 d-flex align-items-center justify-content-center order-1 order-md-1 mb-2 mb-md-0">
                     <img src="/chaplin.png" alt="foto-chaplin" style={{ height: '60px' }} />
                     <h1 className="titulo m-0 ms-3 fw-bold">Charles</h1>
                 </div>
 
                 {/* ÍCONOS */}
-                <div className="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center gap-3 order-2 order-md-3 mb-2 mb-md-0">
+                <div className="col-12 col-md-4 d-flex justify-content-center  align-items-center gap-3 order-2 order-md-3 mb-2 mb-md-0">
                     <a href="#" className="text-dark text-decoration-none fw-semibold d-flex align-items-center">
                         <FontAwesomeIcon icon={faRightToBracket} className="me-2 fs-5" />
                         <span className="d-none d-sm-inline">Acceder</span>

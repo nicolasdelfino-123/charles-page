@@ -44,3 +44,13 @@ backend/venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Ignorar cachés de Python
+backend/__pycache__/
+**/__pycache__/
+
+# Ignorar carpeta de configuración local de Flask
+backend/instance/
+
+# Ignorar entorno virtual
+backend/venv/
