@@ -1,20 +1,14 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-from models import db
+import scraping.yenny_selenium_scraper as scraper
 
 app = Flask(__name__)
 CORS(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mi_base.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+@app.route("/api/mas-vendidos")
+def mas_vendidos():
+    libros = scraper.obtener_mas_vendidos()
+    return jsonify(libros)
 
-db.init_app(app)
-
-@app.route('/api/hola')
-def hola():
-    return jsonify({'mensaje': 'Hola desde Flask'})
-
-if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
+if __name__ == "__main__":
     app.run(debug=True)

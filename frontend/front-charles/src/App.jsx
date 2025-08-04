@@ -3,6 +3,7 @@ import './App.css'
 import { Header } from '../components/Header'
 import { NavBar } from '../components/NavBar'
 import { Slider } from '../components/Slider'
+import MasVendidos from '../components/MasVendidos'
 
 
 function App() {
@@ -12,8 +13,10 @@ function App() {
       <Header />
       <NavBar />
       <Slider />
+      <MasVendidos />
     </div>
   )
 }
 
 export default App
+
